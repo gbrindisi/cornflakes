@@ -7,7 +7,7 @@ let
     packageOverrides = _: super: { tree-sitter = super.tree-sitter_0_21; };
   };
 
-  version = "0.59.0";
+  version = "0.60.0";
 
 in python3.pkgs.buildPythonApplication {
   pname = "aider-chat";
@@ -19,7 +19,7 @@ in python3.pkgs.buildPythonApplication {
     repo = "aider";
     rev = "refs/tags/v${version}";
     # nix hash to-sri --type sha256 $(nix-prefetch-url --unpack https://github.com/Aider-AI/aider/archive/refs/tags/v0.59.0.tar.gz)
-    hash = "sha256-20LicYj1j5gGzhF+SxPUKu858nHZgwDF1JxXeHRtYe0=";
+    hash = "sha256-0jAdUcGGJzxvTKY/56an0oLEghZHz6fdNLg8cPer1Qc=";
   };
 
   pythonRelaxDeps = true;
